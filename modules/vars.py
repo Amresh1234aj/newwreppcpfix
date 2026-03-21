@@ -5,7 +5,7 @@ from os import environ
 
 API_ID = int(environ.get("API_ID", "32933959"))
 API_HASH = environ.get("API_HASH", "e1a5f0730a2ffc4ce45c656d9170c832")
-BOT_TOKEN = environ.get("BOT_TOKEN", "8728017760:AAGT9J7CNQjGA2RpJaZxFhprVFBioMEtMnM")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7745036689:AAH0aD9Lm3iS9MjOdhLU-QijT0syjYvDgBE")
 
 OWNER = int(environ.get("OWNER", "7562365859"))
 CREDIT = environ.get("𝐂ʀᴇᴅɪᴛ", "𝐑𝐞𝐚𝐥 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐫")
