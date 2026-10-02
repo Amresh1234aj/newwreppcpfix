@@ -1,0 +1,7 @@
+/target
+token.txt
+*.mp4
+*.webm
+*.har
+*.events.json
+/dist
