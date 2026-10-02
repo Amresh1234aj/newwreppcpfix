@@ -1,6 +1,6 @@
 # Board + Face Telegram Uploader
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/Amresh1234aj/newwreppcpfix)
 
 > Button काम करे इसके लिए यह folder अपने GitHub repo में push करो और ऊपर के link में
 > `YOUR_GITHUB_USERNAME/YOUR_REPO_NAME` बदल दो। Deploy के बाद Heroku में **worker** dyno ON रखना
