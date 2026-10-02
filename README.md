@@ -1,5 +1,11 @@
 # Board + Face Telegram Uploader
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME)
+
+> Button काम करे इसके लिए यह folder अपने GitHub repo में push करो और ऊपर के link में
+> `YOUR_GITHUB_USERNAME/YOUR_REPO_NAME` बदल दो। Deploy के बाद Heroku में **worker** dyno ON रखना
+> (web dyno नहीं)।
+
 This package combines the **Unacademy board renderer** from `UnacademyDownloader-main`
 with a Telegram uploader using the same Pyrogram-style upload flow as the supplied
 uploader project.
@@ -57,3 +63,16 @@ Set the environment variables and run:
 If the board still does not appear for a particular class, that replay may have
 a different/unsupported event format; the renderer needs the class's slide/event
 data to reconstruct the board.
+
+## Heroku deploy
+
+`app.json` + `heroku.yml` included हैं (container stack, एक `worker` dyno). Button दबाओ,
+5 env variables भरो (`API_ID`, `API_HASH`, `BOT_TOKEN`, `TARGET_CHAT_ID`, `UNACADEMY_TOKEN`)
+और deploy करो। Rust build में कुछ मिनट लगते हैं।
+
+CLI से:
+
+    heroku create
+    heroku stack:set container
+    git push heroku main
+    heroku ps:scale worker=1

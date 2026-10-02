@@ -62,7 +62,6 @@ async def download_cmd(_, m: Message):
         str(UADL), url, UNACADEMY_TOKEN,
         "-o", str(work),
         "--best",
-        "--pip",
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.STDOUT,
     )
